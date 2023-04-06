@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. write a javascript progme to check two number and retrun if one of them is 100 or if the sum of the of the number is 100 ❓
+// retrun means  function use kerna 
+// yehi js  ka jadu mene if else kiya tha answer aya butt esne koi condition lagnae ki jaru rat nahi hai
+// it is totaly based on truety and falsy
+
+
+   const sum=(a,b)=>a===100 || b===100 || a+b===100   // here condition  is  retrun  (advance js acc.  single line dont use  retrun) 
+                                                                         // jab bhi apko condtion retrun krani hai  use this  dont use if else  indside function 
+                                                                         // this  style  arrw  function is based   
+                                                                         // other  map,for,reduce , fiilter
+                                                                          // styke
+                                                                         //     arr.map((ele,index,arr)=> element)
+                         
+    console.log(sum(100,0))
+   console.log(sum(0,100))
+   console.log(sum(50,50))
+   console.log(sum(0,50))
+                   //or 
+                 let ok=   sum(40,60)
+
+ console.log(ok)
+
+
+     //  2.write a javascipt program to get the extension of  a filename ❓
+        
+
+const  name=(str)=>str.slice(str.lastIndexOf('.'))
+
+
+console.log(name('ok.html'))
+console.log(name('ok.js'))
+console.log(name('ok.hello.js')) // that why we use last indexof
+
+// 3.  wirte a javascipt program to replace every cahracter in given string with cahrater following in it the alphabet
+// use chat gpt
+
+// 4.  write a javsscript program to get the current date
+let tau=new Date().toLocaleDateString()
+
+const date=(a)=>   a       // dont try write retrun   auger retrun likha to curly braces bhii likna hoga
+
+console.log(date(tau))    // here three imp function pass krna ,string pass krnea, last here declare varibel pass krna  here new thaink
+
+
+// 5. write a javascitp progeme to create a new string 'new!' in front  of a given string  if the given string begin with 'new!'
+    //  alerdy then retrun the orignal string
+
+    const string=(str)=>
+                 str.indexOf('new!')===0? str:"new! offer"
+
+
+
+      console.log(string( "new! offer"))
+
+
+
+
+    </script>
+</body>
+</html>
